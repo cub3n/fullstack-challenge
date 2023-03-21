@@ -18,6 +18,9 @@ export default {
 </script>
 
 <template>
+  <button class="bg-sky-500 hover:bg-sky-700 ...">
+  Save changes
+</button>
   <div v-if="!apiResponse">
     Pinging the api...
   </div>
@@ -25,7 +28,7 @@ export default {
   <div v-if="apiResponse">
     The api responded with: <br />
     <code>
-    {{ apiResponse }}
-    </code>
+            {{ apiResponse }}
+            </code>
   </div>
 </template>
